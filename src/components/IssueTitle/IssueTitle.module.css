@@ -1,0 +1,128 @@
+.issueInfoTitle {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.issueInfoTitleTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.issueInfoTitleTitle h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.issueInfoTitleEdit {
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, pointer-events 0.3s ease;
+}
+
+.issueInfoTitleTitle:hover .issueInfoTitleEdit {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.issueInfoTitleEdit span {
+    font-size: 25px;
+    color: #6e9197;
+}
+
+.issueInfoTitleInput {
+    font-size: 20px;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-weight: 500;
+    width: 300px;
+}
+
+.issueInfoTitleInput:focus {
+    border-color: #008aa8;
+    box-shadow: 0 0 3px rgba(0, 138, 168, 0.4);
+}
+
+.issueInfoTitleForm {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.issueInfoTitleSaveButton {
+    background-color: #83eede;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 7px 12px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+.issueInfoTitleSaveButton:hover {
+    background-color: #6be3d3;
+}
+
+.issueInfoTitleCancelEdit {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 6px;
+    color: red;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.issueInfoTitleCancelEdit:hover {
+    color: #b84444;
+}
+
+.issueInfoTitleCancelEdit span {
+    font-size: 25px;
+}
+
+.issueInfoGoToOtherIssue {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.issueInfoGoToOtherIssueIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #008aa8;
+}
+
+.issueInfoGoToOtherIssueIcon:hover {
+    background-color: #eee;
+}
+
+.issueInfoGoToOtherIssueIcon span {
+    font-size: 20px;
+}
+
+.issueInfoDueDateTitle {
+    margin-left: 10px;
+}
+
+.issueInfoDueDateTitleExpired {
+    margin-left: 10px;
+    color: red;
+}
+
+.issueInfoDueDateTitleSet {
+    color: #ea7c0e;
+}

@@ -1,0 +1,24 @@
+.issueInfoHeader {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.issueInfoHeader h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #008aa8; /* Azul como el usado en los iconos */
+    font-weight: 600;
+}
+
+.issueInfoCreated {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.issueInfoCreated p {
+    margin: 0;
+    color: #345a6e; /* Azul oscuro suave */
+    font-size: 14px;
+}

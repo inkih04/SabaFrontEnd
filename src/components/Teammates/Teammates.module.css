@@ -1,0 +1,112 @@
+/* Directory: src/components/Teammates/Teammates.module.css */
+.container {
+    padding: 20px;
+}
+.header {
+    display: grid;
+    /* título ajusta su ancho al contenido, luego espacio flexible para búsqueda */
+    grid-template-columns: auto auto 125px 125px 125px;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+.title {
+    grid-column: 1 / 2;
+    font-size: 24px;
+    color: #008aa8;
+    white-space: nowrap; /* evita salto de línea */
+}
+.searchBar {
+    grid-column: 2 / 3;
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #aaa;
+    /* Restringir ancho para que no sea demasiado grande */
+    max-width: 300px;
+    width: auto;
+}
+.searchBar .material-icons {
+    margin-right: 5px;
+    color: #008aa8;
+    font-size: 20px;
+}
+.searchBar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+}
+.navBar {
+    grid-column: 3 / 6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 15px;
+    margin-left: 0; /* quitar desplazamiento */
+}
+.navItem {
+    text-align: center;
+    font-size: 18px;
+    color: #008aa8;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.userCard {
+    display: grid;
+    grid-template-columns: 100px auto 125px 125px 125px;
+    align-items: start;
+    padding: 15px;
+    background-color: #e2eaff;
+    border-radius: 10px;
+    box-shadow: 0 0 4px #eee;
+    gap: 10px;
+    cursor: pointer;
+}
+.userCard:hover {
+    background-color: #d4e4ff;
+}
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bioSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.userName {
+    font-size: 20px;
+    font-weight: bold;
+    color: #008aa8;
+    margin: 0;
+}
+.bioText {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #333;
+}
+.stat {
+    text-align: center;
+    font-size: 18px;
+    align-self: center;
+}
+.error {
+    color: red;
+}

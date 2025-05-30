@@ -1,0 +1,31 @@
+.issueSearchBar {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-grow: 4;
+    margin-left: 15px;
+}
+
+.issueSearchBarContainer {
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #aaa;
+    padding: 0 10px;
+}
+
+.issueSearchBarContainer span {
+    color: #008aa8;
+    font-size: 30px;
+}
+
+.issueSearchBarContainer input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,182 @@
+.issueKeyContainer {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: grid;
+    font-size: 12px;
+    /* Aumentamos el ancho de las columnas 2 y 3 */
+    grid-template-columns: 45px 60px 60px auto 130px 160px 160px 40px;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 10px;
+    gap: 15px; /* Gap reducido entre columnas */
+}
+
+.issueKey, .issueText {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Filas de issues */
+.issueItemContent {
+    display: grid;
+    grid-template-columns: 45px 60px 60px auto 130px 160px 160px 40px;
+    align-items: center;
+    padding: 10px;
+    gap: 15px; /* Mantener el mismo gap que la cabecera */
+}
+
+/* Estilos generales de la lista */
+.issueItem {
+    list-style: none;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 4px #ddd;
+}
+
+/* Para las "bolas" de Type, Severity, Priority */
+.issueType,
+.issueSeverity,
+.issuePriority {
+    display: flex;
+    justify-content: center; /* Centra el texto/ícono dentro de la bola */
+    align-items: center;
+    padding: 15px;
+    border-radius: 50%;
+    margin: auto; /* Centra la "bola" en su columna */
+}
+
+/* Detalle de la 4ª columna */
+.issueDetail {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.issueId {
+    color: #008aa8;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.issueDescription {
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.issueTopic {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.issueSelect {
+    appearance: none;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.issueSelect:hover {
+    cursor: pointer;
+}
+
+/* Íconos (5ª columna) */
+.issueIcon {
+    color: #666;
+    font-size: 24px;
+    margin: 0 5px;
+}
+
+.issueForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.issueText {
+    font-size: 16px;
+}
+
+
+
+.sortLink:hover {
+    color: #008aa8;
+}
+
+.sortArrow {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+
+.issueKey {
+    cursor: pointer;
+}
+
+.issueKey:hover {
+    color: #008aa8;
+}
+
+
+.sortHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 0;
+    position: relative;
+    width: 100%;
+}
+
+.sortHeader span {
+    font-size: 11px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.sortIcon {
+    text-decoration: none;
+    color: #666;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2px;
+}
+
+.sortIcon:hover {
+    color: #008aa8;
+}
+
+
+.sortIcon .material-icons {
+    font-size: 12px;
+}
+
+
+.sortDefault {
+    color: #aaa;
+    font-size: 10px;
+}
+
+
+.issueKey, .issueKeyContainer span {
+    display: flex;
+    position: relative;
+    padding-right: 2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.issueKeyContainer span:nth-child(4) .sortHeader {
+    justify-content: flex-start;
+}

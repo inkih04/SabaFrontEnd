@@ -1,0 +1,235 @@
+.issueTable {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.issueKeyContainer {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    display: grid;
+    font-size: 12px;
+    /* Ajustamos para 6 columnas (sin Assign to y sin delete) */
+    grid-template-columns: 45px 60px 60px auto 130px 160px;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 10px;
+    gap: 15px;
+}
+
+.issueKey, .issueText {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.issuesList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Filas de issues */
+.issueItemContent {
+    display: grid;
+    grid-template-columns: 45px 60px 60px auto 130px 160px;
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+}
+
+/* Estilos generales de la lista */
+.issueItem {
+    list-style: none;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 4px #ddd;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.issueItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Para las "bolas" de Type, Severity, Priority */
+.issueType,
+.issueSeverity,
+.issuePriority {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* Detalle de la 4ª columna */
+.issueDetail {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+.issueDetailLink {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
+
+.issueDetailLink:hover .issueId {
+    color: #005f7f;
+}
+
+.issueId {
+    color: #008aa8;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: color 0.2s ease;
+}
+
+.issueDescription {
+    font-size: 14px;
+    margin-left: 15px;
+    color: #666;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.issueTopic {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+    color: #333;
+}
+
+.issueText {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+/* Sorting */
+.sortHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 0;
+    position: relative;
+    width: 100%;
+}
+
+.sortHeader span {
+    font-size: 11px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.sortIcon {
+    text-decoration: none;
+    color: #666;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 2px;
+    transition: color 0.2s ease;
+}
+
+.sortIcon:hover {
+    color: #008aa8;
+}
+
+.sortIcon .material-icons {
+    font-size: 12px;
+}
+
+.issueKey {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.issueKey:hover {
+    color: #008aa8;
+}
+
+/* Mensajes de estado */
+.loadingMessage {
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+    color: #666;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.errorMessage {
+    text-align: center;
+    padding: 20px;
+    color: #e74c3c;
+    background-color: #fdf2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.emptyMessage {
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+    color: #666;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-style: italic;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .issueKeyContainer,
+    .issueItemContent {
+        grid-template-columns: 30px 40px 40px auto 100px 120px;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    .issueType,
+    .issueSeverity,
+    .issuePriority {
+        width: 20px;
+        height: 20px;
+    }
+
+    .issueDescription {
+        display: none;
+    }
+
+    .issueTopic {
+        font-size: 14px;
+    }
+
+    .issueText {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .issueKeyContainer,
+    .issueItemContent {
+        grid-template-columns: auto 80px 100px;
+        gap: 5px;
+    }
+
+    .issueType,
+    .issueSeverity,
+    .issuePriority {
+        display: none;
+    }
+}

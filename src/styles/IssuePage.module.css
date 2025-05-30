@@ -1,0 +1,23 @@
+
+.issueInfoMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px; /* espacio entre las columnas */
+    color: #2a6888;
+}
+
+.issueInfoPrincipal {
+    flex: 3;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+/* Si envuelves IssueStatus en otro div, úsalo */
+.issueInfoStatusContainer {
+    flex: 1;
+    width: 25%;
+}
+
+/* Opcional: si tu IssueStatus ya tiene estilos, no lo necesitas */

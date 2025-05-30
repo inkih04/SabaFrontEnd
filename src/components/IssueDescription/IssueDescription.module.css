@@ -1,0 +1,44 @@
+.descriptionContainer {
+    margin-bottom: 10px;
+}
+
+.textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.saveButtons {
+    margin-top: 10px;
+}
+
+.infoIssueSaveButton {
+    background-color: #83eede;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.infoIssueSaveButton:hover {
+    background-color: #6be3d399;
+}
+
+.errorText {
+    color: red;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.saveButtons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}

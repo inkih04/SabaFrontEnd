@@ -1,0 +1,60 @@
+.header {
+    background-color: #e2eaff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    container-type: inline-size; /* Indica que para las queries solo se tendrá en cuenta el tamaño horizontal */
+    container-name: header;      /* Es el nombre para referirse a la query */
+    position: fixed;             /* Fija el header en la parte superior */
+    top: 0;                      /* Alinea el header con la parte superior de la ventana */
+    width: 100%;                 /* Asegura que el header ocupe todo el ancho de la ventana */
+    z-index: 10;                 /* Asegura que el header esté por encima de otros elementos */
+    text-align: center;
+    font-size: 20px;
+    min-height: 50px;
+    box-shadow: 0 2px 5px #aaa;
+}
+.icon {
+    font-size: 50px;
+    color: #008aa8;
+}
+.logoContainer {
+    display: flex; align-items: center; gap: 10px; padding: 10px;
+}
+.title { font-size: 2rem; color: #000; }
+.navContainer {
+    display: flex; align-items: center; gap: 15px;
+}
+.username { font-size: 20px; color: #101632dd;
+margin-right: 45px;
+margin-left: 15px;
+}
+.avatarPlaceholder {
+    width: 40px; height: 40px;
+    border-radius: 50%; background-color: #008aa8;
+    display: flex; justify-content: center; align-items: center;
+}
+.avatarImg {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.backButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    background-color: #008aa820;
+    padding: 6px 10px;
+    border-radius: 6px;
+    color: #008aa8;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.backButton:hover {
+    background-color: #008aa840;
+}
+
+
+

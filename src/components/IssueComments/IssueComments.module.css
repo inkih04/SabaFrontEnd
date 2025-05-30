@@ -1,0 +1,131 @@
+.issueInfoComments {
+    margin-bottom: 20px;
+}
+
+.issueInfoCommentsTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d8d9dc;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.issueInfoComment {
+    margin-top: 10px;
+    border-bottom: 1px solid #609aa3;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.commentAvatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.issueInfoCommentMain {
+    width: 90%;
+}
+
+.commentText {
+    white-space: pre-wrap;
+}
+
+.issueInfoCommentDate {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 5px;
+    matign-bottom: 5px;
+}
+
+.issueInfoCommentButtons {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    pointer-events: none;
+    opacity: 0;
+    align-items: center;
+    gap: 10px;
+    transition: opacity 0.3s ease, pointer-events 0.3s ease;
+}
+
+.issueInfoComment:hover .issueInfoCommentButtons{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.editCommentForm textarea,
+.addCommentForm textarea {
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 5px;
+}
+
+.cancelEditComment {
+    background-color: #e0e0e0; /* Gris claro */
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: #333; /* Color del texto gris oscuro */
+    margin-left: 5px; /* Añade un pequeño margen a la izquierda */
+}
+
+
+
+.cancelEditComment:hover {
+    background-color: #d0d0d0; /* Gris ligeramente más oscuro al pasar el ratón */
+}
+
+.addCommentForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.saveButtons {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.infoIssueSaveButton {
+    background-color: #83eede;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15px;
+    padding: 7px;
+    border-color: #83eede;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.infoIssueSaveButton:hover {
+    background-color: #6be3d399;
+}
+
+.EditComment span{
+    color: #6e9197;
+    font-size: 25px;
+    margin-right:7px;
+    cursor: pointer;
+}
+
+.DeleteComment span{
+    color: #b84444;
+    font-size: 25px;
+    margin-left:7px;
+    cursor:  pointer;
+}

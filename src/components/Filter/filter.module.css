@@ -1,0 +1,154 @@
+/* Fondo y contenedor del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cuando añadimos la clase show, lo mostramos */
+.show {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Contenido del modal */
+.modalContent {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    animation: modalAppear 0.4s ease-out;
+}
+
+/* Cabecera del modal */
+.navBarModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeButton {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* Formulario de filtros */
+.filters {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.filtersField {
+    margin-bottom: 15px;
+}
+
+.filtersField label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.filtersField select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filtersField select:focus {
+    border-color: #83eede;
+    box-shadow: 0 0 5px rgba(131,238,222,0.5);
+}
+
+/* Botones */
+.filtersSubmit {
+    background-color: #83eede;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.filtersSubmit:hover {
+    background-color: #6be3d3;
+}
+
+.filtersReset {
+    background-color: #f3f3f3;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.filterButton {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    padding: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 5px #aaa;
+    border: none;
+    cursor: pointer;
+}
+
+.filterButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.filterButton span {
+    color: #008aa8;
+    margin: 0;
+}
+
+.filterButton span:nth-of-type(2) {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 8px;
+}
+
+.filtersReset:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes modalAppear {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

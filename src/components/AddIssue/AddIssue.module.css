@@ -1,0 +1,254 @@
+/* Botón para abrir modal */
+.issueAddButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #83eede;
+    border-radius: 7px;
+    padding: 10px;
+    box-shadow: 0 0 5px #aaa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.issueAddButtonContainer:hover {
+    background-color: #6be3d399;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.issueAddButtonContainer span {
+    color: #000;
+    margin: 0;
+    font-size: 20px;
+}
+
+.issueAddButtonContainer p {
+    color: #000;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+}
+
+.openModal {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Estilos del Modal */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.modalContent {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 50%;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: modalAppear 0.4s ease-out, pulse 1.5s ease-out;
+    transform-origin: center;
+}
+
+.navBarModal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.navBarModal h1 {
+    margin: 0;
+    color: #333;
+}
+
+.close {
+    background: none;
+    border: none;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #aaa;
+    transition: all 0.3s ease;
+}
+
+.close:hover {
+    color: #ff6b6b;
+    transform: rotate(90deg);
+}
+
+/* Contenedor del formulario */
+.modalFormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modalFormSubject {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modalFormField {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modalFormSubject label,
+.modalFormField label {
+    font-weight: bold;
+    color: #333;
+}
+
+.modalFormContainer input,
+.modalFormContainer select,
+.modalFormContainer textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.modalFormContainer input:focus,
+.modalFormContainer select:focus,
+.modalFormContainer textarea:focus {
+    border-color: #83eede;
+    box-shadow: 0 0 5px rgba(131, 238, 222, 0.5);
+    outline: none;
+}
+
+/* Grupos de campos en línea */
+.modalSubgroup,
+.modalSubgroup2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.fieldContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Etiquetas */
+.modalText {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 2px;
+    font-weight: normal;
+}
+
+/* Selects */
+.fieldContainer select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: white;
+}
+
+/* Botón de crear */
+.createBtn {
+    background-color: #83eede;
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.createBtn:hover {
+    background-color: #6be3d399;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.createBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Lista de errores */
+.errorlist {
+    background-color: #fdecea;
+    color: #d32f2f;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #f5c6cb;
+    font-weight: bold;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes modalAppear {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(131, 238, 222, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(131, 238, 222, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(131, 238, 222, 0);
+    }
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .modalContent {
+        width: 90%;
+        margin: 2% auto;
+    }
+
+    .modalSubgroup,
+    .modalSubgroup2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,230 @@
+.issueInfoStatus {
+    flex: 1;
+    background-color: #e3ebef;
+    padding: 12px 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-size: 20px;
+    color: #2a6888;
+}
+
+.issueInfoStatusProperties {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.issueInfoStatusPropertiesSeverity,
+.issueInfoStatusPropertiesPriority,
+.issueInfoStatusPropertiesType {
+    display: flex;
+    flex-direction: column;
+}
+
+.issueInfoStatusAssigned {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.issueInfoAssignedItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff;
+    padding: 6px 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.assignedAvatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.issueInfoStatusAssignedButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px 1px #ccc;
+    cursor: pointer;
+    font-size: 14px;
+    color: #008aa8;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+
+.issueInfoStatusAssignedButton:hover {
+    background-color: #d9e4eb;
+}
+
+.issueInfoStatusWatchers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.issueInfoStatusAssignedButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.issueInfoStatusWatchersList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.issueInfoWatcherItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #fff;
+    padding: 6px 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.watcherAvatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.issueInfoDeleteButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #c0392b;
+    font-size: 18px;
+    padding: 0;
+    line-height: 1;
+}
+
+.sutilSelect {
+    padding: 5px 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: border-color 0.15s ease;
+}
+
+.sutilSelect:focus {
+    outline: none;
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.4);
+}
+
+.issueInfoStatusButtons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.issueInfoStatusButtonsIcon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.15s ease;
+    color: #008aa8;
+    font-size: 22px;
+}
+
+.issueInfoStatusButtonsIcon:hover {
+    background-color: #d9e4eb;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.modalActions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoIssueSaveButton {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.infoIssueSaveButton:hover {
+    background-color: #219150;
+}
+
+.infoIssueDeleteDueDateButton {
+    background: transparent;
+    color: #c0392b;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0;
+    line-height: 1;
+}
+
+.issueInfoDueDateSet {
+    background-color: #ea7c0e;
+    color: #fff;
+}
+
+.issueInfoDueDateSet span {
+    color:#fff;
+}
+
+.issueInfoDueDateSet:hover {
+    background-color: #ec9239;
+}
+
+.issueInfoDueDateExpired {
+    background-color: #dd3333;
+    color : #fff;
+}
+
+.issueInfoDueDateExpired span {
+    color : #fff;
+}
+
+.issueInfoDueDateExpired:hover {
+    background-color: #bb3333;
+}
