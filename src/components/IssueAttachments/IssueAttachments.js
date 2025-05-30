@@ -147,9 +147,8 @@ export default function IssueAttachments({ issue, setIssue }) {
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
-                                    {attachment.name || attachment.filename || (typeof attachment === 'string' ? attachment.split('/').pop() : 'Unknown file')}
+                                    {attachment.name || attachment.filename || (typeof attachment === 'string' ? attachment.split('/').pop() : '' + (attachment.file))}
                                 </a>
-                                <p>{attachment.size || 'Unknown size'}</p>
                                 <p className={styles.issueInfoAttachmentDate}>
                                     {attachment.uploaded_at || attachment.created_at || 'Unknown date'}
                                 </p>
