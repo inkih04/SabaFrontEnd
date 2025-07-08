@@ -51,7 +51,7 @@ export default function AddBulk({ onBulkCreate }) {
                         Authorization: token,
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify({ issuetokens: issuesArray }),
+                    body: JSON.stringify({ issues: issuesArray }),
                 }
             );
 
