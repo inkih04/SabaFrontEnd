@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# it22d-Frontend
 
-## Getting Started
+Frontend repository for the **sabana** project.
 
-First, run the development server:
+## 👥 Team Members
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [David Mas](https://github.com/PatoPro121)
+- [Pol Sancho](https://github.com/PolSB968)
+- [David Sanz](https://github.com/DavidSanzMartinez)
+- [Víctor Díez](https://github.com/inkih04)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Project Management
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+We use **Taiga** for tracking tasks and project progress:  
+🔗 [Taiga Board](https://tree.taiga.io/project/victordiez-it22dasw/taskboard/sprint-1-22919)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Deployment
 
-## Learn More
+Link to the deployment of the web on **Vercel**:  
+🔗 [Live API on Vercel](https://sabana-five.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.Js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
